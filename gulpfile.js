@@ -1,18 +1,31 @@
 const gulp = require("gulp");
 const { config } = require("./config/config");
-const { sass, pug, clean, img, js, reloader } = require("./config/tasks");
+const {
+  sass,
+  pug,
+  clean,
+  img,
+  imgProd,
+  js,
+  fonts,
+  reloader,
+} = require("./config/tasks");
 
 const watch = require("gulp-watch");
 
-const plumber = require("gulp-plumber"); //Перезапуск при ошибке
-
 gulp.task(
   "watch",
-  gulp.parallel(gulp.series("sass", "pug", "js", "reloader"), () => {
-    watch(config.src + config.pug.src, gulp.series("pug"));
-    watch(config.src + config.sass.src, gulp.series("sass"));
-    watch(config.src + config.js.src, gulp.series("js"));
-  })
+  gulp.parallel(
+    gulp.series("clean", "img", "sass", "pug", "js", "fonts", "reloader"),
+    () => {
+      watch(config.src + config.pug.src, gulp.series("pug"));
+      watch(config.src + config.sass.src, gulp.series("sass"));
+      watch(config.src + config.js.src, gulp.series("js"));
+    }
+  )
 );
 
-gulp.task("build", gulp.series("clean", "sass", "pug", "js", "img"));
+gulp.task(
+  "build",
+  gulp.series("clean", "sass", "pug", "js", "fonts", "imgProd")
+);
