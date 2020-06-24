@@ -1,0 +1,112 @@
+.action {
+  position: relative;
+
+  &__inner {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 10px;
+  }
+  &__img {
+    display: block;
+    margin: auto;
+  }
+  &__promo {
+    margin: 50px auto;
+    position: relative;
+    padding: 20px 40px;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 52px;
+    line-height: 52px;
+    text-align: center;
+    border: none;
+    color: white;
+
+    box-sizing: content-box;
+    border: 3px solid transparent;
+    &:before,
+    &:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+    }
+    &:before {
+      top: -10px;
+      left: -10px;
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+      transition: 0.5s all;
+    }
+    &:after {
+      top: -10px;
+      right: -10px;
+      border-top: 3px solid white;
+      border-right: 3px solid white;
+      transition: 0.5s all;
+    }
+    &-text {
+      &:before,
+      &:after {
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+      }
+      &:before {
+        bottom: -10px;
+        left: -10px;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        transition: 0.5s all;
+      }
+      &:after {
+        bottom: -10px;
+        right: -10px;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        transition: 0.5s all;
+      }
+    }
+  }
+  &__do-benefit {
+    margin-bottom: 15px;
+  }
+  &__reg {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+    opacity: 1;
+    transition: opacity 0.5s;
+    border: 3px solid #870000;
+    background: linear-gradient(
+      180deg,
+      #ffe600 0%,
+      #fffbd4 50%,
+      #ffe700 50%,
+      #ffa400 75%,
+      #ffea02 100%
+    );
+    @media screen and (max-width: 840px) {
+      padding: 20px 40px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__list {
+    margin: 50px 0;
+  }
+}

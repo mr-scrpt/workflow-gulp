@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA,KACE,WAAA,KCGF,OACE,MAAA","file":"style.css","sourcesContent":["body {\r\n  background: yellow;\r\n  & p {\r\n    color: blue;\r\n  }\r\n}\r\n","body {\n  background: yellow;\n}\n\nbody p {\n  color: blue;\n}"]}

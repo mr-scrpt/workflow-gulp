@@ -1,2 +1,0 @@
-const ter="1111dd1sss",arr=[()=>1,()=>2];
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIiwidGVzdC5qcyJdLCJuYW1lcyI6WyJ0ZXIiLCJhcnIiXSwibWFwcGluZ3MiOiJBQUFBLE1BQUFBLElBQUEsYUNBQUMsSUFBQSxDQUFBLElBQUEsRUFBQSxJQUFBIiwiZmlsZSI6ImJ1bmRsZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IHRlciA9IFwiMTExMWRkMXNzc1wiO1xyXG4iLCJjb25zdCBhcnIgPSBbKCkgPT4gMSwgKCkgPT4gMl07XHJcbiJdfQ==
