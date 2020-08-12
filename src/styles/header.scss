@@ -1,15 +1,19 @@
 .header {
+  min-height: 100vh;
   position: relative;
   z-index: 1;
   &__inner {
+    padding: 30px 0;
     text-align: center;
     //box-shadow: 0px 10px 10px 10px black inset;
   }
   &__logo {
     display: block;
     margin: auto;
-
-    /* @media screen and (max-width: 768px) {
+    width: 600px;
+    height: 85px;
+    margin-bottom: 160px;
+    @media screen and (max-width: 768px) {
       width: 500px;
       margin-bottom: 60px;
     }
@@ -20,6 +24,90 @@
     @media screen and (max-width: 540px) {
       font-size: 60px;
       margin-bottom: 10px;
-    } */
+    }
+  }
+
+  &__text {
+    font-size: 142px;
+    line-height: 140px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ffe402, #ff0404);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    &:after {
+      width: 100%;
+      content: attr(data-text);
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      top: 0;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 80px;
+      line-height: 80px;
+    }
+    @media screen and (max-width: 540px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    /*  font-size: 72px;
+    background-image: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative; */
+    /*&:after {      
+       background: none;
+      content: attr(data-text);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      text-shadow: 5px 5px 5px red;
+
+      z-index: -1; 
+    }*/
+  }
+
+  &__date {
+    font-size: 80px;
+    color: #fff;
+    line-height: 80px;
+    padding: 20px;
+
+    @media screen and (max-width: 640px) {
+      font-size: 40px;
+    }
+  }
+  &__go {
+    width: 300px;
+    margin: auto;
+    @media screen and (max-width: 640px) {
+      padding-top: 100px;
+    }
+    @media screen and (max-width: 540px) {
+      padding-top: 15px;
+      width: 200px;
+    }
+  }
+  &__scroll {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    @media screen and (max-width: 640px) {
+      padding-top: 40px;
+    }
+  }
+  &__scrollLink {
+    display: flex;
+    justify-content: center;
+  }
+  &__scrollImg {
+    @media screen and (max-width: 640px) {
+      width: 70%;
+    }
   }
 }

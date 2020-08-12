@@ -2,4 +2,14 @@
   .header__inner
     .header__logo
       include ./logo.pug
-    
+    .header__textBox
+      .header__text(data-text="Cashback week") Cashback week
+      
+    .header__date
+      | 22.06 - 27.06
+    .header__go
+       a(href="https://streambet.com/").link.button
+        .button__text Return
+    .header__scroll
+       a(href="#maintext").link.header__scrollLink
+        img(src="./img/button__scroll.png").header__scrollImg.img

@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Dopis';
-    src: local('Dopis Bold'), local('Dopis-Bold'),
-        url('Dopis-Bold.woff2') format('woff2'),
-        url('Dopis-Bold.woff') format('woff'),
-        url('Dopis-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }

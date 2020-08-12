@@ -1,27 +1,25 @@
 .layout {
   width: 100%;
-  min-height: 100%;
-  background: #000;
+  height: 100%;
+  background: #040506;
 
   &__wrap {
-    width: 100%;
+    box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
     max-width: 1920px;
+    width: 100%;
     min-height: 100%;
-    position: relative;
-    overflow: hidden;
     margin: auto;
-    &:before {
-      content: "";
-      position: absolute;
-      background: url("../img/bg_main_merge.jpg") 0 0 no-repeat;
-      height: 100%;
-      width: 1920px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: auto;
-    }
-    /* @media screen and (max-width: 768px) {
+    background: url("../img/bg_main.png") 0 0 no-repeat;
+    padding: 0 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
       padding: 0 15px;
-    } */
+    }
+    @media screen and (max-width: 640px) {
+      background-image: url("../img/bg_main_mob.png");
+      background-size: cover;
+      background-position: 0 -40px;
+    }
   }
 }

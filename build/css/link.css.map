@@ -1,0 +1,1 @@
+{"version":3,"sources":["link.scss"],"names":[],"mappings":"AAAA,MACE,gBAAA","file":"link.css","sourcesContent":[".link {\r\n  text-decoration: none;\r\n}\r\n"]}
