@@ -6,6 +6,7 @@ const paths = {
     dest: "/",
   },
   pug: {
+    watch: "/views/**/*.pug",
     src: "/views/pages/*.pug",
     dest: "/",
   },

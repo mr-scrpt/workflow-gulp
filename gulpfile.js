@@ -18,8 +18,8 @@ gulp.task(
   gulp.parallel(
     gulp.series("clean", "img", "sass", "pug", "js", "fonts", "reloader"),
     () => {
-      watch(config.src + config.pug.src, gulp.series("pug"));
-      watch(config.src + config.sass.src, gulp.series("sass"));
+      watch(config.src + config.pug.watch, gulp.series("pug"));
+      watch(config.src + config.sass.watch, gulp.series("sass"));
       watch(config.src + config.js.src, gulp.series("js"));
     }
   )
