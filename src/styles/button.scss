@@ -1,29 +1,26 @@
 .button {
   display: block;
-  font-size: 35px;
-  line-height: 40px;
-  padding: 5px 40px 15px;
-  border-radius: 30px;
-  //box-shadow: 0 0 20px #7f67ff, 0 0 20px #7f67ff, 0 0 8px 3px #fff;
-  background-image: linear-gradient(to bottom, #ffe402 0%, #ff0404 100%);
-
+  font-size: 24px;
+  line-height: 30px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.2s background;
+  box-shadow: 0px 0px 21px rgba(255, 255, 255, 0.7);
   @media screen and (max-width: 768px) {
     font-size: 20px;
     line-height: 24px;
-    padding: 5px 30px 15px;
+    //padding: 5px 30px 15px;
   }
 
-  &:hover {
-    background-image: linear-gradient(
-      to bottom,
-      darken(#7f67ff, 5) 0%,
-      darken(#5038cf, 5) 100%
-    );
+  &_alt {
+    background: linear-gradient(180deg, #6ca1c8 0%, #427e9a 100%);
+    & .button__text {
+      color: #fff;
+    }
   }
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+
   &__text {
-    color: #fff;
+    color: #000;
   }
 }

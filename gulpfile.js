@@ -27,5 +27,5 @@ gulp.task(
 
 gulp.task(
   "build",
-  gulp.series("clean", "sass", "pug", "js", "fonts", "imgProd")
+  gulp.series("clean", "sass", "pug", "js", "fonts", "img") //"imgProd"
 );

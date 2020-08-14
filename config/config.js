@@ -28,7 +28,7 @@ const paths = {
   },
   sass: {
     watch: "/styles/**/*.scss",
-    src: "/styles/**/*.scss",
+    src: "/styles/**/style.scss",
     dest: "/css/",
   },
 };

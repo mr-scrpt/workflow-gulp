@@ -1,0 +1,175 @@
+.screen {
+  &__inner {
+    height: 100vh;
+    min-height: 600px;
+    @media screen and (max-width: 375px) {
+      height: 100%;
+      min-height: 100vh;
+    }
+  }
+
+  &__first {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 375px) {
+      height: 100%;
+      min-height: 100vh;
+    }
+    &:before {
+      position: absolute;
+      background: url("../img/bg__screen_first.png") 0 0 no-repeat;
+      content: "";
+      margin: auto;
+      height: 100%;
+      width: 1440px;
+      background-size: cover;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @media screen and (max-width: 375px) {
+        background: url("../img/bg__screen_first_mob.png") 0 0 no-repeat;
+        width: 375px;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      background: rgba(11, 30, 36, 0.67);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__second {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &:before {
+      position: absolute;
+      background: url("../img/bg__screen_second.png") 0 0 no-repeat;
+      content: "";
+      margin: auto;
+      height: 100%;
+      width: 1440px;
+      background-size: cover;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @media screen and (max-width: 375px) {
+        background: url("../img/bg__screen_second_mob.png") 0 0 no-repeat;
+        width: 375px;
+      }
+    }
+  }
+  &__logo {
+    position: relative;
+    z-index: 1;
+    //background: green;
+    display: flex;
+    padding: 15px 10px;
+    &_second {
+      padding: 50px 10px;
+      @media screen and (max-width: 768px) {
+        padding: 30px 10px;
+      }
+    }
+  }
+
+  &__slogan-logo {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 10px;
+    //background: pink;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  &__slogan-logo-dark {
+    position: relative;
+    z-index: 1;
+    color: #639bc3;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+    @media screen and (max-width: 768px) {
+      font-size: 21px;
+      line-height: 24px;
+      margin-bottom: 50px;
+    }
+  }
+  &__main-box {
+    position: relative;
+    z-index: 1;
+    //background: indianred;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  &__slogan-main {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    //background: blue;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__discount {
+    //background: greenyellow;
+  }
+  &__button {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+  &__button-move {
+    animation: resize 1s ease-in-out infinite alternate;
+  }
+  &__run-string {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  &__utp {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__contact {
+    position: relative;
+    z-index: 1;
+    margin-right: 160px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+}

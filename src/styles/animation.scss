@@ -1,0 +1,17 @@
+@-webkit-keyframes resize {
+  from {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

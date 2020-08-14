@@ -1,0 +1,26 @@
+.contact {
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+  &__box {
+    text-align: right;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #639bc3;
+    font-weight: bold;
+  }
+  &__number {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

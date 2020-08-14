@@ -1,1 +1,0 @@
-{"version":3,"sources":["img.scss"],"names":[],"mappings":"AAAA,KACE,QAAA,MACA,UAAA,KACA,OAAA","file":"img.css","sourcesContent":[".img {\r\n  display: block;\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n"]}

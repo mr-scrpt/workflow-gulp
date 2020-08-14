@@ -1,0 +1,19 @@
+.run-string {
+  &__inner {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: linear-gradient(180deg, #6ca1c8 0%, #427e9a 100%);
+  }
+  &__text {
+    display: inline-block;
+    padding: 10px 15px;
+    animation: run 1525s infinite linear;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
